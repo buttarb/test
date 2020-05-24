@@ -76,7 +76,7 @@
     </nav>
 </section>
 
-<section class="engine"><a href="https://mobirise.info/e">how to make a website</a></section><section class="header1 cid-rUduM6JZD3" id="header1-1">
+<section class="engine"><a href="https://mobirise.info/b">create your own site</a></section><section class="header1 cid-rUduM6JZD3" id="header1-1">
 
     
 
@@ -106,9 +106,9 @@
      
 
     <div class="container">
-        <div class="inner-container" style="width: 86%;">
+        <div class="inner-container" style="width: 90%;">
             <hr class="line" style="width: 10%;">
-            <div class="section-text align-center mbr-white mbr-fonts-style display-7">In response to <strong>COVID-19 pandemic</strong> we are open for essential drop-off appointments and services only. <a href="assets/files/COVID-19-Message.pdf" target="_blank" class="text-white"><u>Click here for more info</u></a></div>
+            <div class="section-text align-center mbr-white mbr-fonts-style display-7">In response to <strong>COVID-19 pandemic</strong> we are require curbside drop-offs and pick-ups &nbsp;for all services. <a href="assets/files/COVID-19-Message.pdf" target="_blank" class="text-white"><u>Click for details</u></a></div>
             <hr class="line" style="width: 10%;">
         </div>
     </div>
@@ -307,8 +307,18 @@
   
         <div class="col-md-6 align-left">
             
-            <iframe src="jqform/form.html" style="min-width:200px;width:100%; height:640px;border:none;" frameborder="none" allowtransparency="true">
-            </iframe>
+                <form id="contact-form" method="post">
+            <h6>Name</h6>
+          <input type="text" style="height:35px;" id="name-input" placeholder="Enter name here…" class="form-control" required=""><br>
+          <h6>Phone</h6>
+          <input type="phone" style="height:35px;" id="phone-input" placeholder="Enter phone number" class="form-control" required=""><br>
+          <h6>Email:</h6>
+          <input type="email" style="height:35px;" id="email-input" placeholder="Enter email here…" class="form-control" required=""><br>
+          <h6>How can we help you?</h6>
+          <textarea id="description-input" rows="3" placeholder="Enter your message…" class="form-control" style="width:100%;" required=""></textarea><br>
+          <div class="g-recaptcha" data-sitekey="6Lc7cVMUAAAAAM1yxf64wrmO8gvi8A1oQ_ead1ys" style="width:100%;"></div>
+          <button type="button" class="btn btn-primary" onclick="submitToAPI(event)">Submit</button>
+    </form>
             
             
         </div>
